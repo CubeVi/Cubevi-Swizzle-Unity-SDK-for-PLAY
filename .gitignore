@@ -1,0 +1,57 @@
+# This .gitignore file is intended for the SDK package directory.
+#
+# IMPORTANT:
+# We generally do NOT ignore .meta files because they are critical for Unity
+# to track asset references (GUIDs).
+# However, per user request, we are only tracking .meta files in specific directories.
+
+# Ignore all .meta files by default
+*.meta
+
+# Whitelist .meta files in specific directories and the directory .meta files themselves
+!Scene/
+!Scene/**/*.meta
+
+!Shaders/
+!Shaders/**/*.meta
+
+!Scripts/
+!Scripts/**/*.meta
+
+!Sources/
+!Sources/**/*.meta
+
+!StreamingAssets/
+!StreamingAssets/**/*.meta
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Ignore Visual Studio / JetBrains generated files
+*.csproj
+*.sln
+*.suo
+.vs/
+.idea/
+
+# Ignore builds
+Build/
+Builds/
+
+# Ignore Unity generated files (if any end up here)
+Library/
+Temp/
+Obj/
+Logs/
